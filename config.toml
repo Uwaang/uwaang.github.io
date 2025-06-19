@@ -13,6 +13,8 @@ timeZone = "Asia/Seoul"
   ShowPostNavLinks = true
   ShowReadingTime = true
   comments = true
+  github_username = "Uwaang"  # GitHub 사용자명
+  github_repo = "obsidian-hugo-blog"  # 리포지토리명
 
 [params.giscus]
   repo = "Uwaang/uwaang.github.io"
