@@ -1,0 +1,21 @@
+{{- /* giscus comments integration */ -}}
+{{- $params := .Site.Params -}}
+{{- $giscus := $params.giscus -}}
+{{- if and $params.comments $giscus.repo $giscus.repoID $giscus.category $giscus.categoryID -}}
+<div id="comments" class="comments">
+<script src="https://giscus.app/client.js"
+        data-repo="{{ $giscus.repo }}"
+        data-repo-id="{{ $giscus.repoID }}"
+        data-category="{{ $giscus.category }}"
+        data-category-id="{{ $giscus.categoryID }}"
+        data-mapping="{{ with $giscus.mapping }}{{ . }}{{ else }}pathname{{ end }}"
+        data-reactions-enabled="{{ with $giscus.reactionsEnabled }}{{ . }}{{ else }}1{{ end }}"
+        data-emit-metadata="{{ with $giscus.emitMetadata }}{{ . }}{{ else }}0{{ end }}"
+        data-input-position="{{ with $giscus.inputPosition }}{{ . }}{{ else }}bottom{{ end }}"
+        data-theme="{{ with $giscus.theme }}{{ . }}{{ else }}preferred_color_scheme{{ end }}"
+        data-lang="{{ with $giscus.lang }}{{ . }}{{ else }}en{{ end }}"
+        crossorigin="anonymous"
+        async>
+</script>
+</div>
+{{- end -}} 
