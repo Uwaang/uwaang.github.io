@@ -1,6 +1,6 @@
-baseURL = "https://USERNAME.github.io/"  # TODO: 수정
+baseURL = "https://uwaang.github.io/"  # TODO: 수정
 languageCode = "ko-kr"
-title = "My Obsidian Blog"
+title = "Uwaang's Blog"
 theme = "PaperMod"
 timeZone = "Asia/Seoul"
 
@@ -14,10 +14,10 @@ paginate = 10
   comments = true
 
 [params.giscus]
-  repo = "USERNAME/REPO"          # GitHub repo (owner/name)
-  repoID = "REPO_ID"              # giscus ➜ "repo ID"
+  repo = "Uwaang/uwaang.github.io"
+  repoID = "R_kgDOO-Vt-w"              # giscus ➜ "repo ID"
   category = "General"            # Discussion category
-  categoryID = "CATEGORY_ID"      # giscus ➜ "category ID"
+  categoryID = "DIC_kwDOO-Vt-84Crs-Q"      # giscus ➜ "category ID"
   mapping = "pathname"
   reactionsEnabled = "1"
   emitMetadata = "0"
