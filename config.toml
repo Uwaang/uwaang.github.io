@@ -12,22 +12,19 @@ timeZone = "Asia/Seoul"
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
   ShowReadingTime = true
+  comments = true
 
-[params.comments]
-  enabled = true
-  provider = "giscus"
-
-  [params.comments.giscus]
-    repo = "Uwaang/uwaang.github.io"
-    repoID = "R_kgDOO-Vt-w"          # giscus ➜ "repo ID"
-    category = "General"
-    categoryID = "DIC_kwDOO-Vt-84Crs-Q"  # giscus ➜ "category ID"
-    mapping = "pathname"
-    reactionsEnabled = "1"
-    emitMetadata = "0"
-    inputPosition = "bottom"
-    theme = "light"
-    lang = "ko"
+[params.giscus]
+  repo = "Uwaang/uwaang.github.io"
+  repoID = "R_kgDOO-Vt-w"
+  category = "General"
+  categoryID = "DIC_kwDOO-Vt-84Crs-Q"
+  mapping = "pathname"
+  reactionsEnabled = "1"
+  emitMetadata = "0"
+  inputPosition = "bottom"
+  theme = "light"
+  lang = "ko"
 
 [markup]
   [markup.goldmark.renderer]
