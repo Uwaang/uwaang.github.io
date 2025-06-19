@@ -3,7 +3,7 @@
   command = "hugo --minify"
 
 [build.environment]
-  HUGO_VERSION = "0.140.2"
+  HUGO_VERSION = "0.152.0"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
 
@@ -14,9 +14,12 @@
 
 [context.production.environment]
   HUGO_BASEURL = "https://uwaang.netlify.app/"
+  HUGO_VERSION = "0.152.0"
 
 [context.deploy-preview.environment]
   HUGO_BASEURL = "https://deploy-preview-${REVIEW_ID}--uwaang.netlify.app/"
+  HUGO_VERSION = "0.152.0"
 
 [context.branch-deploy.environment]
-  HUGO_BASEURL = "https://branch-${BRANCH}--uwaang.netlify.app/" 
+  HUGO_BASEURL = "https://branch-${BRANCH}--uwaang.netlify.app/"
+  HUGO_VERSION = "0.152.0" 
