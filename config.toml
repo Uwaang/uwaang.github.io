@@ -1,0 +1,30 @@
+baseURL = "https://USERNAME.github.io/"  # TODO: 수정
+languageCode = "ko-kr"
+title = "My Obsidian Blog"
+theme = "PaperMod"
+timeZone = "Asia/Seoul"
+
+paginate = 10
+
+[params]
+  author = "YOUR_NAME"
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowReadingTime = true
+  comments = true
+
+[params.giscus]
+  repo = "USERNAME/REPO"          # GitHub repo (owner/name)
+  repoID = "REPO_ID"              # giscus ➜ "repo ID"
+  category = "General"            # Discussion category
+  categoryID = "CATEGORY_ID"      # giscus ➜ "category ID"
+  mapping = "pathname"
+  reactionsEnabled = "1"
+  emitMetadata = "0"
+  inputPosition = "bottom"
+  theme = "light"
+  lang = "ko"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true 

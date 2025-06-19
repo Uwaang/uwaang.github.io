@@ -1,0 +1,14 @@
+# Obsidian local data
+.obsidian/
+
+# Hugo build output
+public/
+resources/
+
+# Node / Temp files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.tmp 
