@@ -13,10 +13,10 @@
   status = 200
 
 [context.production.environment]
-  HUGO_BASEURL = "https://your-site-name.netlify.app/"
+  HUGO_BASEURL = "https://uwaang.netlify.app/"
 
 [context.deploy-preview.environment]
-  HUGO_BASEURL = "https://deploy-preview-${REVIEW_ID}--your-site-name.netlify.app/"
+  HUGO_BASEURL = "https://deploy-preview-${REVIEW_ID}--uwaang.netlify.app/"
 
 [context.branch-deploy.environment]
-  HUGO_BASEURL = "https://branch-${BRANCH}--your-site-name.netlify.app/" 
+  HUGO_BASEURL = "https://branch-${BRANCH}--uwaang.netlify.app/" 
